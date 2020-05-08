@@ -3,6 +3,12 @@ function openTab(evt, name) {
   var i, tabcontent, tablinks;
 
   // Get all elements with class="tabcontent" and hide them
+
+  tabcontent2 = document.getElementsByClassName("tabcontentactive");
+  for (i = 0; i < tabcontent2.length; i++) {
+    tabcontent2[i].className = "tabcontent";
+  }
+
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
@@ -15,7 +21,10 @@ function openTab(evt, name) {
   }
 
   // Show the current tab, and add an "active" class to the button that opened the tab
-  document.getElementById(name).style.display = "block";
+
+  element = document.getElementById(name);
+  element.style.display = "block";
+  element.className += "active";
   evt.currentTarget.className += " active";
 
   // Get the element with id="defaultOpen" and click on it
