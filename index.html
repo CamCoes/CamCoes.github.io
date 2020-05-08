@@ -1,20 +1,137 @@
-<! Cameron Coesens>
-<HTML>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/tab.css" />
+    <link rel="stylesheet" href="./css/slidingheader.css" />
+    <script src="./js/slidingheader.js"></script>
+    <script src="./js/tab.js"></script>
+    <title>Cameron Coesens | Portfolio</title>
+  </head>
 
-	<HEAD>
-		<TITLE>Renewable Energy</TITLE>
-		<link rel="icon" href="https://www.metering.com/wp-content/uploads/2016/02/renewable_energy_sources-768x576.jpg">
-	</HEAD>
+  <body>
+    <div class="top-container">
+      <span>
+        <center>
+          <div id="inner">
+            <h1>Welcome</h1>
+          </div>
+        </center>
+      </span>
+    </div>
 
-		<FRAMESET  framespacing="0" ROWS="8%, 92%" frameborder="0">
-			<FRAME SRC="Index.html"scrolling="no">
-			<FRAME SRC="Home.html" NAME="Main" FRAMEBORDER="0" NORESIZE = "1" >
-		</FRAMESET>
+    <div class="header" id="myHeader">
+      <table style="width: 100%;">
+        <tr>
+          <td>
+            <div>
+              <h2>Cameron Coesens</h2>
+            </div>
+          </td>
+          <td>
+            <div class="tab">
+              <button class="tablinks" onclick="openTab(event, 'CAD')">
+                CAD
+              </button>
+              <button class="tablinks" onclick="openTab(event, '3D_Printing')">
+                3D Printing
+              </button>
+              <button class="tablinks" onclick="openTab(event, 'robotics')">
+                First Robotics
+              </button>
+              <button
+                id="defaultOpen"
+                class="tablinks"
+                onclick="openTab(event, 'Home')"
+              >
+                Home
+              </button>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div height="100%">
+      <div id="Home" class="tabcontent">
+        <center> <img src="./images/mephoto.jpg" width = "20%" alt="A picture of me"></img></center>
 
-	<BODY bgcolor = lightgray>
+        <span style="color: #33cccc;">
+          <center>
+          <h3>
+            <p>Hi, my name is Cameron Coesens</p>
+            <p>Welcome to my portfolio</p>
+          </h3>
+          </center>
+
+          <center>
+            <p class="ex1">
+            I am currently a student at Romeo High School in Romeo, Michigan. I enjoy many hobbies such as 3D printing, camping, 
+            fishing ,robotics, wood working, programming, CAD, and much more. On top of all of my hobbies I am also an eagle scout 
+            from troop 208 out of Shelby Township. 
+            </p>
+          </center>
+        </span>
+      </div>
+    </div>
+
+
+    <div height="100%">
+      <div id="3D_Printing" class="tabcontent">
+        <center> <img src="./images/printer.jpg" width="20%" alt="A picture of me"></img></center>
+
+        <span style="color: #33cccc;">
+          <center>
+          <h3>
+            <p>My 3D Printer</p>
+          </h3>
+          </center>
+
+          <center>
+            <p class="ex1">
+              This is my 3D printer, it is a cr10s. Over the past 10 months I have been playing with it and modifying it.
+              I have modified my printer to use a clone E3D V6 hotend, stepper dampeners, klipper firmware, 
+              and a bltouch. During the 2020 Coronovirus pandamic I lead design and communications of a group of people 
+              who were using their own personal printers to print faceshield. Our teams efforts ended when we produced 
+              our 10600th face shield due to a limit in money and supplies. On top of the faceshield production and design 
+              I have also 3d printed many of my own projects (you can read about it in my CAD section).
+            </p>
+          </center>
+        </span>
+      </div>
+    </div>
+
+
+    <div height="100%">
+      <div id="robotics" class="tabcontent">
+
+        <center><table><tr><img src="./images/Robot2017.jpg" width="20%" alt="2017 robot">&nbsp;</img></tr><tr><img src="./images/Robot2019.jpg" width="20%" alt="2019 robot">&nbsp;</img></tr><tr><img src="./images/Robot2020.jpg" width="20%" alt="2020 robot">&nbsp;</img></tr></table> </center>
+
+        <span style="color: #33cccc;">
+          <center>
+          <h3>
+            <p>My history with First Robotics</p>
+          </h3>
+          </center>
+
+          <center>
+            <p class="ex1">
+              I have been a part of the first robotics team 3539 for four years now. For the first three years I was a programmer 
+              on the programming subteam. While I was programming I would help with CAD, Electrical, and Fabrication. For my forth 
+              year I was lead programmer, my job was to lead a group of programmers in programming basic and advanced robot controls. 
+              While I continue my education I am planning on mentoring the robotics team.
+              
+            </p>
+          </center>
+        </span>
+      </div>
+    </div>
 
 
 
 
-	</BODY>
-</HTML>
+    <script>
+      document.getElementById("defaultOpen").click();
+    </script>
+  </body>
+</html>

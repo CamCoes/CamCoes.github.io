@@ -1,0 +1,51 @@
+.top-container {
+  background-image: url("../images/Programming.jpg");
+  padding         : 30px;
+  text-align      : center;
+}
+
+.header {
+  padding   : 0px 3px;
+  background: #555;
+  color     : #f1f1f1;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top     : 0;
+  width   : 100%;
+}
+
+.sticky+.content {
+  padding-top: 102px;
+}
+
+.span {
+  display    : block;
+  height     : 60px;
+  width      : 60px;
+  line-height: 60px;
+
+  -moz-border-radius: 30px;
+  border-radius     : 30px;
+
+  background-color: black;
+  color           : white;
+  text-align      : center;
+  font-size       : 2em;
+}
+
+#inner {
+  height               : 50;
+  width                : 200px;
+  background           : #555;
+  border-radius        : 100px;
+  -moz-border-radius   : 100px;
+  -webkit-border-radius: 100px;
+  margin-left          : 0px;
+  margin-top           : 0px;
+}
