@@ -1,137 +1,229 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/tab.css" />
-    <link rel="stylesheet" href="./css/slidingheader.css" />
-    <script src="./js/slidingheader.js"></script>
-    <script src="./js/tab.js"></script>
-    <title>Cameron Coesens | Portfolio</title>
-  </head>
 
-  <body>
-    <div class="top-container">
-      <span>
-        <center>
-          <div id="inner">
-            <h1>Welcome</h1>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/tab.css" />
+  <link rel="stylesheet" href="./css/slidingheader.css" />
+  <script src="./js/slidingheader.js"></script>
+  <script src="./js/tab.js"></script>
+  <title>Cameron Coesens | Portfolio</title>
+</head>
+
+<body>
+  <div class="top-container">
+    <center>
+      <div id="inner">
+        <h1>Welcome</h1>
+      </div>
+    </center>
+  </div>
+
+  <div class="header" id="myHeader">
+    <table style="width: 100%;">
+      <tr>
+        <td>
+          <div>
+            <h2>Cameron Coesens</h2>
           </div>
-        </center>
-      </span>
-    </div>
+        </td>
+        <td>
+          <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'CAD')">
+              CAD
+            </button>
+            <button class="tablinks" onclick="openTab(event, '3D_Printing')">
+              3D Printing
+            </button>
+            <button class="tablinks" onclick="openTab(event, 'robotics')">
+              First Robotics
+            </button>
+            <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">
+              Home
+            </button>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+  <div height="100%">
+    <div id="Home" class="tabcontent">
+      <center>
+        <img src="./images/mephoto.jpg" width="20%" alt="A picture of me"></img>
 
-    <div class="header" id="myHeader">
-      <table style="width: 100%;">
+        <h3>
+          <p>Hi, my name is Cameron Coesens</p>
+          <p>Welcome to my portfolio</p>
+        </h3>
+
+        <p class="ex1">
+          I am currently a student at Romeo High School in Romeo, Michigan. I enjoy many hobbies such as 3D printing,
+          camping,
+          fishing, robotics, wood working, programming, CAD, and much more. On top of all of my hobbies I am also an
+          eagle scout
+          from troop 208 out of Shelby Township.
+        </p>
+      </center>
+    </div>
+  </div>
+
+
+  <div height="100%">
+    <div id="3D_Printing" class="tabcontent">
+      <center> <img src="./images/printer.jpg" width="20%" alt="A picture of me"></img>
+        <h3>
+          <p>My 3D Printer</p>
+        </h3>
+
+        <p class="ex1">
+          This is my 3D printer, it is a cr10s. Over the past 10 months I have been playing with it and modifying it.
+          I have modified my printer to use a clone E3D V6 hotend, stepper dampeners, klipper firmware,
+          and a bltouch. During the 2020 Coronovirus pandamic I lead design and communications of a group of people
+          who were using their own personal printers to print faceshield. Our teams efforts ended when we produced
+          our 10600th face shield due to a limit in money and supplies. On top of the faceshield production and design
+          I have also 3d printed many of my own projects (you can read about it in my CAD section).
+        </p>
+      </center>
+    </div>
+  </div>
+
+
+  <div height="100%" class="fade-in">
+    <div id="robotics" class="tabcontent">
+
+      <table width=100%>
         <tr>
-          <td>
-            <div>
-              <h2>Cameron Coesens</h2>
-            </div>
+          <td width=50%>
+            <center><img src="./images/first_in_michigan.png" width="75%" alt="First In Michigan Pic"></center>
           </td>
           <td>
-            <div class="tab">
-              <button class="tablinks" onclick="openTab(event, 'CAD')">
-                CAD
-              </button>
-              <button class="tablinks" onclick="openTab(event, '3D_Printing')">
-                3D Printing
-              </button>
-              <button class="tablinks" onclick="openTab(event, 'robotics')">
-                First Robotics
-              </button>
-              <button
-                id="defaultOpen"
-                class="tablinks"
-                onclick="openTab(event, 'Home')"
-              >
-                Home
-              </button>
-            </div>
+            <center>
+              <h3>
+                <p>My history with First Robotics</p>
+              </h3>
+              <p class="ex2">
+                I have been a part of the first robotics team 3539 for four years now. For the first three years I was
+                a programmer on the programming subteam. While I was programming I would help with CAD, Electrical,
+                and Fabrication. For my forth year I was lead programmer, my job was to lead a group of programmers in
+                programming basic and advanced robot controls. While I continue my education I am planning on
+                mentoring the robotics team.
+
+              </p>
+            </center>
           </td>
         </tr>
-      </table>
+
+        <tr>
+          <td>
+            <center>
+              <h3>
+                <p>2017 Steamworks Robot: Tina
+                </p>
+              </h3>
+              <p class="ex2">
+                2017 was a fun year. The 2017 game contained 3 major robot functions, shooting fuel, delivering gears to
+                your steamship, and climbing a rope at the end of the match. Since 2017 was my first year on the team I
+                didn't get to do as much as I would have liked to do on this robot. During the build season I mainly
+                worked on vision tracking, during our needs and wants meeting we had determined that the robot should
+                have vision tracking to self align itself with the target before shooting. In the end our vision
+                tracking system contained a Raspbery PI 3, 2 usb cameras, and 2 green leds, and custom python code. This
+                system was able to track retroreflective tape located on the target. In addition to vision tracking I
+                also worked on the robots autonomous routines. During the first 15 seconds of the game all robots will
+                move autonomously, our robot was able to do nearly all of the available tasks during this time. During
+                the offseason I explored fabrication on the team by improving our climber. Originally our climber ran on
+                one cim motor, my idea was to switch it to two 775 pro motors to improve speed and prevent breaker
+                trips.
+              </p>
+            </center>
+          </td>
+          <td>
+            <center><img src="./images/Robot2017.jpg" width="75%" alt="2017 robot"></img></center>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <center><img src="./images/Robot2018.jpg" width="75%" alt="2018 robot"></img></center>
+          </td>
+          <td>
+            <center>
+              <h3>
+                <p>2018 Power Up: Lamar
+                </p>
+              </h3>
+              <p class="ex2">
+                2018 was a great year. The 2018 game contained 2 major robot functions, manipulating power cubes, and
+                climbing. Power Up was my second year on the team, I was able to do alot more things that my first year
+                on the team. This year I mainily worked on motion profiling and robot control. Motion profiling was used
+                during the 15 second autonomous period and was capable of positioning the robot to a final target while
+                following a preprogrammed path within a 6" tolerence (this was then improved in 2019). On top of motion
+                profiling I also worked on other robot control such as binding specific robot function to the driver and
+                operators controllers.
+              </p>
+            </center>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <center>
+              <h3>
+                <p>2019 Destination: Deep Space: Timby
+                </p>
+              </h3>
+              <p class="ex2">
+                While 2019 was not the best year that the team had at competitions it was one of the best for learning.
+                During 2019 we designed and built a very complex robot with many aspects. The robot was a great learning
+                tool teaching us what parts of the design were good and what was bad. This years game had 3 different
+                major robot functions, manipulate cargo, manipulate hatch panels, and to climb a 6", 13", or 19" step.
+                This was the first year that I really stepped outside of the programming aspect of the robot, I helped
+                pick electrical sensor, and design custom circuits for the robot's different functions. After picking
+                those sensor or designing them, I cadded custom cases for every sensor that didn't have one. In addition
+                to helping electrical and CAD I also helped fabricate multiple axles, and custom cnc elevator rollers.
+                Although I was helping the other subteams make the robot I still had plenty of time to develop a new
+                vision tracking system and to update our motion profiling system to be accurate within 2".
+              </p>
+            </center>
+          </td>
+          <td>
+            <center><img src="./images/Robot2019.jpg" width="75%" alt="2019 robot"></img></center>
+          </td>
+        </tr>
+
+
+        <tr>
+          <td>
+            <center><img src="./images/Robot2020.jpg" width="75%" alt="2019 robot"></img></center>
+          </td>
+          <td>
+            <center>
+              <h3>
+                <p>2020 Infinate Recharge: Mantis
+                </p>
+              </h3>
+              <p class="ex2">
+                The 2020 season had the potential to be one of our best years however it was abruptly cut short by the
+                2020 COVID-19 pandemic. Our robot was built from all of our learning experiences from our 2017 to 2019
+                seasons.
+                During this year I spent most of my time programming our new swerve drive. This year despite loosing
+                most of our programmers to graduation our robot had some of our most complex control, the robot was
+                equiped with coordinate based motion profiling, vision tracking (based on 2017), and many accurate pid
+                controllers. Ontop of programming most of the robots control I also cadded the shooter mechanism for the
+                robot.
+              </p>
+            </center>
+          </td>
+        </tr>
     </div>
-    <div height="100%">
-      <div id="Home" class="tabcontent">
-        <center> <img src="./images/mephoto.jpg" width = "20%" alt="A picture of me"></img></center>
-
-        <span style="color:  #778899">
-          <center>
-          <h3>
-            <p>Hi, my name is Cameron Coesens</p>
-            <p>Welcome to my portfolio</p>
-          </h3>
-          </center>
-
-          <center>
-            <p class="ex1">
-            I am currently a student at Romeo High School in Romeo, Michigan. I enjoy many hobbies such as 3D printing, camping, 
-            fishing, robotics, wood working, programming, CAD, and much more. On top of all of my hobbies I am also an eagle scout 
-            from troop 208 out of Shelby Township. 
-            </p>
-          </center>
-        </span>
-      </div>
-    </div>
-
-
-    <div height="100%">
-      <div id="3D_Printing" class="tabcontent">
-        <center> <img src="./images/printer.jpg" width="20%" alt="A picture of me"></img></center>
-
-        <span style="color:  #778899">
-          <center>
-          <h3>
-            <p>My 3D Printer</p>
-          </h3>
-          </center>
-
-          <center>
-            <p class="ex1">
-              This is my 3D printer, it is a cr10s. Over the past 10 months I have been playing with it and modifying it.
-              I have modified my printer to use a clone E3D V6 hotend, stepper dampeners, klipper firmware, 
-              and a bltouch. During the 2020 Coronovirus pandamic I lead design and communications of a group of people 
-              who were using their own personal printers to print faceshield. Our teams efforts ended when we produced 
-              our 10600th face shield due to a limit in money and supplies. On top of the faceshield production and design 
-              I have also 3d printed many of my own projects (you can read about it in my CAD section).
-            </p>
-          </center>
-        </span>
-      </div>
-    </div>
-
-
-    <div height="100%" class="fade-in">
-      <div id="robotics" class="tabcontent">
-
-        <center><table><tr><img src="./images/Robot2017.jpg" width="20%" alt="2017 robot">&nbsp;</img></tr><tr><img src="./images/Robot2019.jpg" width="20%" alt="2019 robot">&nbsp;</img></tr><tr><img src="./images/Robot2020.jpg" width="20%" alt="2020 robot">&nbsp;</img></tr></table> </center>
-
-        <span style="color: #778899">
-          <center>
-          <h3>
-            <p>My history with First Robotics</p>
-          </h3>
-          </center>
-
-          <center>
-            <p class="ex1">
-              I have been a part of the first robotics team 3539 for four years now. For the first three years I was a programmer 
-              on the programming subteam. While I was programming I would help with CAD, Electrical, and Fabrication. For my forth 
-              year I was lead programmer, my job was to lead a group of programmers in programming basic and advanced robot controls. 
-              While I continue my education I am planning on mentoring the robotics team.
-              
-            </p>
-          </center>
-        </span>
-      </div>
-    </div>
+  </div>
 
 
 
 
-    <script>
-      document.getElementById("defaultOpen").click();
-    </script>
-  </body>
+  <script>
+    document.getElementById("defaultOpen").click();
+  </script>
+</body>
+
 </html>

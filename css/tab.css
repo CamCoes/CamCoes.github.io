@@ -18,11 +18,12 @@
   transition      : 0.3s;
   color           : rgb(255, 255, 255);
   font-weight     : bold;
+  margin          : 1px;
 }
 
 /* Change background color of buttons on hover */
 .tab button:hover {
-  background-color: #8395A7;
+  background-color: rgb(158, 182, 206);
 }
 
 /* Create an active/current tablink class */
