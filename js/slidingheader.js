@@ -5,9 +5,13 @@ window.onscroll = function () {
 function myFunction() {
   var header = document.getElementById("myHeader");
   sticky = header.offsetTop;
-  if (window.pageYOffset > sticky) {
-    header.classList.add("sticky");
+  if (header.classList.contains("sticky")) {
+    if (window.pageYOffset < sticky + header.clientHeight) {
+      header.classList.remove("sticky");
+    }
   } else {
-    header.classList.remove("sticky");
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    }
   }
 }
