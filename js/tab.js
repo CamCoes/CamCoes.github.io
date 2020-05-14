@@ -1,4 +1,4 @@
-function openTab(evt, name) {
+function openTab(evt, name, headerReplacementText) {
   // Declare all variables
   var i, tabcontent, tablinks;
 
@@ -26,6 +26,9 @@ function openTab(evt, name) {
   element.style.display = "block";
   element.className += "active";
   evt.currentTarget.className += " active";
+
+  inner = document.getElementById("headerText");
+  headerText.innerText = headerReplacementText;
 
   // Get the element with id="defaultOpen" and click on it
 }

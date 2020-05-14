@@ -12,10 +12,10 @@
 </head>
 
 <body>
-  <div class="top-container">
+  <div class="top-container" id="top">
     <center>
       <div id="inner">
-        <h1>Welcome</h1>
+        <h1 id="headerText">Welcome</h1>
       </div>
     </center>
   </div>
@@ -30,19 +30,19 @@
         </td>
         <td>
           <div class="tab">
-            <button class="tablinks" onclick="openTab(event, 'Projects')">
+            <button class="tablinks" onclick="openTab(event, 'Projects', 'Projects')">
               Projects
             </button>
-            <button class="tablinks" onclick="openTab(event, 'CAD')">
+            <button class="tablinks" onclick="openTab(event, 'CAD', 'CAD')">
               CAD
             </button>
-            <button class="tablinks" onclick="openTab(event, '3D_Printing')">
+            <button class="tablinks" onclick="openTab(event, '3D_Printing', '3D Printing')">
               3D Printing
             </button>
-            <button class="tablinks" onclick="openTab(event, 'robotics')">
+            <button class="tablinks" onclick="openTab(event, 'robotics', 'Robotics')">
               First Robotics
             </button>
-            <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home')">
+            <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'Home', 'Welcome')">
               Home
             </button>
           </div>
