@@ -30,6 +30,9 @@
         </td>
         <td>
           <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Projects')">
+              Projects
+            </button>
             <button class="tablinks" onclick="openTab(event, 'CAD')">
               CAD
             </button>
@@ -47,7 +50,8 @@
       </tr>
     </table>
   </div>
-  <div height="100%">
+
+  <div height="100%" class="fade-in">
     <div id="Home" class="tabcontent">
       <center>
         <img src="./images/mephoto.jpg" width="20%" alt="A picture of me"></img>
@@ -69,7 +73,7 @@
   </div>
 
 
-  <div height="100%">
+  <div height="100%" class="fade-in">
     <div id="3D_Printing" class="tabcontent">
       <center> <img src="./images/printer.jpg" width="20%" alt="A picture of me"></img>
         <h3>
@@ -122,16 +126,20 @@
                 </p>
               </h3>
               <p class="ex2">
-                2017 was a fun year. The 2017 game contained 3 major robot functions, shooting fuel, delivering gears to
-                your steamship, and climbing a rope at the end of the match. Since 2017 was my first year on the team I
+                2017 was a fun year. The 2017 game contained 3 major robot functions, shooting fuel, delivering gears
+                to
+                your steamship, and climbing a rope at the end of the match. Since 2017 was my first year on the team
+                I
                 didn't get to do as much as I would have liked to do on this robot. During the build season I mainly
                 worked on vision tracking, during our needs and wants meeting we had determined that the robot should
                 have vision tracking to self align itself with the target before shooting. In the end our vision
-                tracking system contained a Raspbery PI 3, 2 usb cameras, and 2 green leds, and custom python code. This
+                tracking system contained a Raspbery PI 3, 2 usb cameras, and 2 green leds, and custom python code.
+                This
                 system was able to track retroreflective tape located on the target. In addition to vision tracking I
                 also worked on the robots autonomous routines. During the first 15 seconds of the game all robots will
                 move autonomously, our robot was able to do nearly all of the available tasks during this time. During
-                the offseason I explored fabrication on the team by improving our climber. Originally our climber ran on
+                the offseason I explored fabrication on the team by improving our climber. Originally our climber ran
+                on
                 one cim motor, my idea was to switch it to two 775 pro motors to improve speed and prevent breaker
                 trips.
               </p>
@@ -154,11 +162,16 @@
               </h3>
               <p class="ex2">
                 2018 was a great year. The 2018 game contained 2 major robot functions, manipulating power cubes, and
-                climbing. Power Up was my second year on the team, I was able to do alot more things that my first year
-                on the team. This year I mainily worked on motion profiling and robot control. Motion profiling was used
-                during the 15 second autonomous period and was capable of positioning the robot to a final target while
-                following a preprogrammed path within a 6" tolerence (this was then improved in 2019). On top of motion
-                profiling I also worked on other robot control such as binding specific robot function to the driver and
+                climbing. Power Up was my second year on the team, I was able to do alot more things that my first
+                year
+                on the team. This year I mainily worked on motion profiling and robot control. Motion profiling was
+                used
+                during the 15 second autonomous period and was capable of positioning the robot to a final target
+                while
+                following a preprogrammed path within a 6" tolerence (this was then improved in 2019). On top of
+                motion
+                profiling I also worked on other robot control such as binding specific robot function to the driver
+                and
                 operators controllers.
               </p>
             </center>
@@ -173,13 +186,16 @@
                 </p>
               </h3>
               <p class="ex2">
-                While 2019 was not the best year that the team had at competitions it was one of the best for learning.
-                During 2019 we designed and built a very complex robot with many aspects. The robot was a great learning
+                While 2019 was not the best year that the team had at competitions it was one of the best for
+                learning.
+                During 2019 we designed and built a very complex robot with many aspects. The robot was a great
+                learning
                 tool teaching us what parts of the design were good and what was bad. This years game had 3 different
                 major robot functions, manipulate cargo, manipulate hatch panels, and to climb a 6", 13", or 19" step.
                 This was the first year that I really stepped outside of the programming aspect of the robot, I helped
                 pick electrical sensor, and design custom circuits for the robot's different functions. After picking
-                those sensor or designing them, I cadded custom cases for every sensor that didn't have one. In addition
+                those sensor or designing them, I cadded custom cases for every sensor that didn't have one. In
+                addition
                 to helping electrical and CAD I also helped fabricate multiple axles, and custom cnc elevator rollers.
                 Although I was helping the other subteams make the robot I still had plenty of time to develop a new
                 vision tracking system and to update our motion profiling system to be accurate within 2".
@@ -194,7 +210,7 @@
 
         <tr>
           <td>
-            <center><img src="./images/Robot2020.jpg" width="75%" alt="2019 robot"></img></center>
+            <center><img src="./images/Robot2020.jpg" width="75%" alt="2020 robot"></img></center>
           </td>
           <td>
             <center>
@@ -209,18 +225,130 @@
                 During this year I spent most of my time programming our new swerve drive. This year despite loosing
                 most of our programmers to graduation our robot had some of our most complex control, the robot was
                 equiped with coordinate based motion profiling, vision tracking (based on 2017), and many accurate pid
-                controllers. Ontop of programming most of the robots control I also cadded the shooter mechanism for the
+                controllers. Ontop of programming most of the robots control I also cadded the shooter mechanism for
+                the
                 robot.
               </p>
             </center>
           </td>
         </tr>
+      </table>
     </div>
   </div>
 
+  <div height="100%" class="fade-in">
+    <div id="CAD" class="tabcontent">
+      <table width=100%>
+        <tr>
+          <td width=50%>
+            <center><img src="./images/Shooter_v49.png" width="75%" alt="Cad rendering of shooter v49"></center>
+          </td>
+          <td>
+            <center>
+              <h3>
+                <p>Dodge Ball Shooter</p>
+              </h3>
+              <p class="ex2">
+                This CAD model was created in the 2020 robotics seasons. During the 2020 season I was lead programmer
+                however our cad team was lacking members and was in need of assistance, since I didn't have a robot to
+                program I decided to assist with cad so I designed our shooter mechanism. This shooter mechanism is
+                designed to be able to shoot 7" dodge balls over 30 feet at almost any arc.
 
+              </p>
+            </center>
+          </td>
+        </tr>
 
+        <tr>
+          <td>
+            <center>
+              <h3>
+                <p>Falcon 500 Gearbox</p>
+              </h3>
+              <p class="ex2">
+                This CAD model was created in the 2019 robotics offseasons. This was a project that I did during the
+                2019 robotics offseason. I decided to do this project when a new motor was announce from one of FIRSTS
+                electrical supplier CTRE. The purpose of the project was to enhance my knowledge of fusion 360 and to
+                create something that may be useful during the 2020 season.
+              </p>
+            </center>
+          </td>
+          <td width=50%>
+            <center><img src="./images/Falcon_Gearbox.png" width="75%" alt="Cad rendering of a Falcon_Gearbox">
+            </center>
+          </td>
+        </tr>
 
+        <tr>
+          <td width=50%>
+            <center><img src="./images/Frame v13.png" width="75%" alt="Cad rendering of a face shield frame"></center>
+          </td>
+          <td>
+            <center>
+              <h3>
+                <p>Face Shield Band</p>
+              </h3>
+              <p class="ex2">
+                I created this model during the 2020 COVID-19 pandemic to meet the needs of many doctors. Although
+                design is
+                based off of the 3D Verkstan Model it has many changes to it to conform to the doctors needs. The
+                model
+                has a decreased forhead gap and a larger gap between the face and the shield. These changes will allow
+                for people with larger glasses to wear the shield, and the smaller forhead gap will allow for more
+                protection.
+              </p>
+            </center>
+          </td>
+
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <div height="100%" class="fade-in">
+    <div id="Projects" class="tabcontent">
+      <table width=100%>
+        <tr>
+          <td width=50%>
+            <center><img src="./images/SteamStatus.jpg" width="75%" alt="Cad rendering of shooter v49"></center>
+          </td>
+          <td>
+            <center>
+              <h3>
+                <p>Steam Status Shelf</p>
+              </h3>
+              <p class="ex2">
+                The purpose of this shelf was to connect to Steam's web api to display if your friends are online, away,
+                busy, etc. The shelf was made for 8 funko pop figurine boxes to sit ontop of. Read more at <a
+                  href="https://www.instructables.com/id/Steam-Linked-Display-Shelf/">instructable</a> where I posted a
+                full tutorial on how I made this.
+
+              </p>
+            </center>
+          </td>
+        </tr>
+
+        <tr>
+
+          <td>
+            <center>
+              <h3>
+                <p>Bill Calendar</p>
+              </h3>
+              <p class="ex2">
+                I created this bill calendar program in the summer of 2018. This program allows users to create a
+                schedule of when bills are due how much is due and they can even include a link to where to pay the
+                bill. View the code on <a href="https://github.com/Juniormunk/Bill-Calendar">github</a>.
+              </p>
+            </center>
+          </td>
+          <td width=50%>
+            <center><img src="./images/BillCal.JPG" width="75%" alt="Cad rendering of shooter v49"></center>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </div>
   <script>
     document.getElementById("defaultOpen").click();
   </script>

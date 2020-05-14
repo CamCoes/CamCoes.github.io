@@ -1,17 +1,25 @@
 .top-container {
-  background-image: url("../images/Programming.jpg");
+  background-image: url(../images/Programming.jpg);
   padding         : 30px;
   text-align      : center;
+  opacity         : 1.0;
+  z-index         : 2;
+
+
 }
 
 .header {
   padding   : 0px 3px;
   background: #555;
   color     : #f1f1f1;
+  opacity   : 1.0;
+  z-index   : 2;
 }
 
 .content {
   padding: 0px 3px;
+  opacity: 1.0;
+
 }
 
 .sticky {
@@ -19,10 +27,14 @@
   padding : 0px 3px;
   width   : 100%;
   top     : 0;
+  opacity : 1.0;
+
 }
 
 .sticky+.content {
   padding-top: 102px;
+  opacity    : 1.0;
+
 }
 
 .span {
@@ -38,6 +50,8 @@
   color           : white;
   text-align      : center;
   font-size       : 2em;
+  opacity         : 1.0;
+
 }
 
 #inner {
@@ -49,4 +63,6 @@
   -webkit-border-radius: 100px;
   margin-left          : 0px;
   margin-top           : 0px;
+  opacity              : 1.0;
+
 }
